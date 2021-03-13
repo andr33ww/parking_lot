@@ -9,13 +9,13 @@
 ## Run tests cases file
 • Install all dependencies.<br/>
 • Run the main server (make sure there are success message displayed on the terminal: "server listening on http://localhost:8000").<br/>
-• Create a tests case file (or use file_input.txt file). <br />
-• Open http://localhost:8000/ on your browser. <br />
-• Choose the file_input.txt or test case file from the form displayed. <br />
-• Click upload and the output will be displayed. <br />
+• Create a tests case file (or use file_input.txt file). <br/>
+• Open http://localhost:8000/ on your browser. <br/>
+• Choose the file_input.txt or test case file from the form displayed. <br/>
+• Click upload and the output will be displayed. <br/>
 
 ## Screenshot
-• You can check the screenshot at sreenshot folder to check the output of the program
+• You can check the screenshot at sreenshot folder to check the output of the program <br/>
 • The screenshot files is ordered by name number
 
 _____________________________________________________________________________________________________
