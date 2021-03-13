@@ -1,12 +1,12 @@
-#Parking lot problems
+# Parking lot problems
 
-Install dependencies
+## Install dependencies
 "npm install formidable"
 
-Run the main server
+## Run the main server
 "node upload_file.js"
 
-Run tests cases file
+## Run tests cases file
 • Install all dependencies.<br/>
 • Run the main server (make sure there are success message displayed on the terminal: "server listening on http://localhost:8000").<br/>
 • Create a tests case file (or use file_input.txt file). <br />
@@ -16,7 +16,7 @@ Run tests cases file
 
 _____________________________________________________________________________________________________
 
-Problem Statement:
+## Problem Statement:
 
 I own a parking lot that can hold up to 'n' cars at any given point in time. Each slot is 
 given a number starting at 1 increasing with increasing distance from the entry point 
@@ -37,60 +37,62 @@ output. Please take a look at the example below, which includes all the commands
 you need to support - they're self explanatory. The system should accept a filename
 as a parameter at the command prompt and read the commands from that file.
 
-Commands:
+## Commands:
 • Create parking lot of size n : create_parking_lot 
 {capacity}
 • Park a car : park {car_number} • Remove(Unpark) car from : leave {car_number} {hours}
 • Print status of parking slot : status
 
-Input (contents of file):
+## Input (contents of file):
+create_parking_lot 6<br/>
+park KA-01-HH-1234<br/>
+park KA-01-HH-9999<br/>
+park KA-01-BB-0001<br/>
+park KA-01-HH-7777<br/>
+park KA-01-HH-2701<br/>
+park KA-01-HH-3141<br/>
+leave KA-01-HH-3141 4<br/>
+status<br/>
+park KA-01-P-333<br/>
+park DL-12-AA-9999<br/>
+leave KA-01-HH-1234 4<br/>
+leave KA-01-BB-0001 6<br/>
+leave DL-12-AA-9999 2<br/>
+park KA-09-HH-0987<br/>
+park CA-09-IO-1111<br/>
+park KA-09-HH-0123<br/>
+status<br/>
 
-create_parking_lot 6 <br />
-park KA-01-HH-1234 White <br />
-park KA-01-HH-9999 White <br />
-park KA-01-BB-0001 Black <br />
-park KA-01-HH-7777 Red <br />
-park KA-01-HH-2701 Blue <br />
-park KA-01-HH-3141 Black <br />
-leave 4 <br />
-status <br />
-park KA-01-P-333 White <br />
-park DL-12-AA-9999 White <br />
-registration_numbers_for_cars_with_colour White <br />
-slot_numbers_for_cars_with_colour White <br />
-slot_number_for_registration_number KA-01-HH-3141 <br />
-slot_number_for_registration_number MH-04-AY-1111 <br />
-
-Output (to STDOUT):
-
-Created a parking lot with 6 slots <br />
-Allocated slot number: 1 <br />
-Allocated slot number: 2 <br />
-Allocated slot number: 3 <br />
-Allocated slot number: 4 <br />
-Allocated slot number: 5 <br />
-Allocated slot number: 6 <br />
-Slot number 4 is free <br />
-Slot No. Registration No <br />
-Colour <br />
-1 <br />
-KA-01-HH-1234 <br />
-White <br />
-2 <br />
-KA-01-HH-9999 <br />
-White <br />
-3 <br />
-KA-01-BB-0001 <br />
-Black <br />
-5 <br />
-KA-01-HH-2701 <br />
-Blue <br />
-6 <br />
-KA-01-HH-3141<br />
-Black <br />
-Allocated slot number: 4 <br />
-Sorry, parking lot is full <br />
-KA-01-HH-1234, KA-01-HH-9999, KA-01-P-333 <br />
-1, 2, 4 <br />
-6 <br />
-Not found <br />
+## Output (to STDOUT):
+Created parking lot with 6 slots<br/>
+Allocated slot number: 1<br/>
+Allocated slot number: 2<br/>
+Allocated slot number: 3<br/>
+Allocated slot number: 4<br/>
+Allocated slot number: 5<br/>
+Allocated slot number: 6<br/>
+Registration number KA-01-HH-
+3141 with Slot Number 6 is free with Charge 30<br/>
+Slot No. Registration No.<br/>
+1 KA-01-HH-1234 <br/>
+2 KA-01-HH-9999 <br/>
+3 KA-01-BB-0001 <br/>
+4 KA-01-HH-7777 <br/>
+5 KA-01-HH-2701 <br/>
+Allocated slot number: 6<br/>
+Sorry, parking lot is full<br/>
+Registration number KA-01-HH-
+1234 with Slot Number 1 is free with Charge 30<br/>
+Registration number KA-01-BB-
+0001 with Slot Number 3 is free with Charge 50<br/>
+Registration number DL-12-AA-9999 not found<br/>
+Allocated slot number: 1<br/>
+Allocated slot number: 3<br/>
+Sorry, parking lot is full<br/>
+Slot No. Registration No.<br/>
+1 KA-09-HH-0987 <br/>
+2 KA-01-HH-9999 <br/>
+3 CA-09-IO-1111 <br/>
+4 KA-01-HH-7777 <br/>
+5 KA-01-HH-2701 <br/>
+6 KA-01-P-333<br/>
