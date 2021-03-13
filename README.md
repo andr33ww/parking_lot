@@ -44,51 +44,55 @@ as a parameter at the command prompt and read the commands from that file.
 • Print status of parking slot : status
 
 ## Input (contents of file):
-create_parking_lot 6 <br />
-park KA-01-HH-1234 White <br />
-park KA-01-HH-9999 White <br />
-park KA-01-BB-0001 Black <br />
-park KA-01-HH-7777 Red <br />
-park KA-01-HH-2701 Blue <br />
-park KA-01-HH-3141 Black <br />
-leave 4 <br />
-status <br />
-park KA-01-P-333 White <br />
-park DL-12-AA-9999 White <br />
-registration_numbers_for_cars_with_colour White <br />
-slot_numbers_for_cars_with_colour White <br />
-slot_number_for_registration_number KA-01-HH-3141 <br />
-slot_number_for_registration_number MH-04-AY-1111 <br />
+create_parking_lot 6
+park KA-01-HH-1234
+park KA-01-HH-9999
+park KA-01-BB-0001
+park KA-01-HH-7777
+park KA-01-HH-2701
+park KA-01-HH-3141
+leave KA-01-HH-3141 4
+status
+park KA-01-P-333
+park DL-12-AA-9999
+leave KA-01-HH-1234 4
+leave KA-01-BB-0001 6
+leave DL-12-AA-9999 2
+park KA-09-HH-0987
+park CA-09-IO-1111
+park KA-09-HH-0123
+status
 
 ## Output (to STDOUT):
-Created a parking lot with 6 slots <br />
-Allocated slot number: 1 <br />
-Allocated slot number: 2 <br />
-Allocated slot number: 3 <br />
-Allocated slot number: 4 <br />
-Allocated slot number: 5 <br />
-Allocated slot number: 6 <br />
-Slot number 4 is free <br />
-Slot No. Registration No <br />
-Colour <br />
-1 <br />
-KA-01-HH-1234 <br />
-White <br />
-2 <br />
-KA-01-HH-9999 <br />
-White <br />
-3 <br />
-KA-01-BB-0001 <br />
-Black <br />
-5 <br />
-KA-01-HH-2701 <br />
-Blue <br />
-6 <br />
-KA-01-HH-3141<br />
-Black <br />
-Allocated slot number: 4 <br />
-Sorry, parking lot is full <br />
-KA-01-HH-1234, KA-01-HH-9999, KA-01-P-333 <br />
-1, 2, 4 <br />
-6 <br />
-Not found <br />
+Created parking lot with 6 slots
+Allocated slot number: 1
+Allocated slot number: 2
+Allocated slot number: 3
+Allocated slot number: 4
+Allocated slot number: 5
+Allocated slot number: 6
+Registration number KA-01-HH-
+3141 with Slot Number 6 is free with Charge 30
+Slot No. Registration No.
+1 KA-01-HH-1234 
+2 KA-01-HH-9999 
+3 KA-01-BB-0001 
+4 KA-01-HH-7777 
+5 KA-01-HH-2701 
+Allocated slot number: 6
+Sorry, parking lot is full
+Registration number KA-01-HH-
+1234 with Slot Number 1 is free with Charge 30
+Registration number KA-01-BB-
+0001 with Slot Number 3 is free with Charge 50
+Registration number DL-12-AA-9999 not found
+Allocated slot number: 1
+Allocated slot number: 3
+Sorry, parking lot is full
+Slot No. Registration No.
+1 KA-09-HH-0987 
+2 KA-01-HH-9999 
+3 CA-09-IO-1111 
+4 KA-01-HH-7777 
+5 KA-01-HH-2701 
+6 KA-01-P-333
