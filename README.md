@@ -14,6 +14,10 @@
 • Choose the file_input.txt or test case file from the form displayed. <br />
 • Click upload and the output will be displayed. <br />
 
+## Screenshot
+• You can check the screenshot at sreenshot folder to check the output of the program
+• The screenshot files is ordered by name number
+
 _____________________________________________________________________________________________________
 
 ## Problem Statement:
