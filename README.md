@@ -1,12 +1,12 @@
-#Parking lot problems
+# Parking lot problems
 
-Install dependencies
+## Install dependencies
 "npm install formidable"
 
-Run the main server
+## Run the main server
 "node upload_file.js"
 
-Run tests cases file
+## Run tests cases file
 • Install all dependencies.<br/>
 • Run the main server (make sure there are success message displayed on the terminal: "server listening on http://localhost:8000").<br/>
 • Create a tests case file (or use file_input.txt file). <br />
@@ -16,7 +16,7 @@ Run tests cases file
 
 _____________________________________________________________________________________________________
 
-Problem Statement:
+## Problem Statement:
 
 I own a parking lot that can hold up to 'n' cars at any given point in time. Each slot is 
 given a number starting at 1 increasing with increasing distance from the entry point 
@@ -37,14 +37,13 @@ output. Please take a look at the example below, which includes all the commands
 you need to support - they're self explanatory. The system should accept a filename
 as a parameter at the command prompt and read the commands from that file.
 
-Commands:
+## Commands:
 • Create parking lot of size n : create_parking_lot 
 {capacity}
 • Park a car : park {car_number} • Remove(Unpark) car from : leave {car_number} {hours}
 • Print status of parking slot : status
 
-Input (contents of file):
-
+## Input (contents of file):
 create_parking_lot 6 <br />
 park KA-01-HH-1234 White <br />
 park KA-01-HH-9999 White <br />
@@ -61,8 +60,7 @@ slot_numbers_for_cars_with_colour White <br />
 slot_number_for_registration_number KA-01-HH-3141 <br />
 slot_number_for_registration_number MH-04-AY-1111 <br />
 
-Output (to STDOUT):
-
+## Output (to STDOUT):
 Created a parking lot with 6 slots <br />
 Allocated slot number: 1 <br />
 Allocated slot number: 2 <br />
