@@ -1,3 +1,4 @@
+const Car = require('./car_model')
 var http = require('http');
 var fs = require('fs');
 var formidable = require('formidable');
@@ -29,13 +30,31 @@ http.createServer(function (req, res)
 			{
 				var hasil = String(data);
 				inputData = hasil.split("\n");
-
-				resEnd = "<ul>";
+				resEnd = "";
+				let parking_slots = [];
+				let cars = [];
 				for (var i = 0; i < inputData.length; i++)
 				{
-					resEnd = resEnd + "<li>" + inputData[i] + "</li>";
+					var inputLine = inputData[i].split(" ");
+					if(inputLine.length>0)
+					{
+						switch(inputLine[0])
+						{
+							case "create":
+								resEnd = resEnd + "cre";
+								break;
+							case "park":
+								resEnd = resEnd + "pak";
+								break;
+							case "leave":
+								resEnd = resEnd + "lea";
+								break;
+							case "status":
+								resEnd = resEnd + "sta";
+								break;
+						}
+					}
 				}
-				resEnd = resEnd + "</ul>";
 				res.writeHead(200, {'Content-Type': 'text/html'});
 				res.write(resEnd);
 				res.end();
